@@ -12,8 +12,6 @@ Tab:AddLabel("Checkpoints")
 Tab:AddButton({
 	Name = "Win",
 	Callback = function()
-      		_G.autoWin = Value
-              while _G.autoWin and wait() do
               local player = game.Players.LocalPlayer
 local character = player.Character or player.CharacterAdded:Wait()
 
