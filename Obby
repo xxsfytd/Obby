@@ -73,7 +73,6 @@ for _, position in ipairs(teleportPositions) do
     character:SetPrimaryPartCFrame(position)
     wait(1) -- Adjust the wait time as needed
 end
-end
   	end    
 })
 
