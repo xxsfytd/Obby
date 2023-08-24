@@ -1,0 +1,95 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Obby", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Boi",
+	Content = "am i pro? do u want me to make more 🤑 scripts",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("Checkpoint")
+
+Tab:AddButton({
+	Name = "Win",
+	Callback = function()
+              local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+
+local teleportPositions = {
+    CFrame.new(Vector3.new(14, 5, -29)),
+    CFrame.new(Vector3.new(13, 5, -93)),
+    CFrame.new(Vector3.new(14, 5, -145)),
+    CFrame.new(Vector3.new(14, 5, -267)),
+    CFrame.new(Vector3.new(14, 5, -389)),
+    CFrame.new(Vector3.new(14, 5, -457)),
+    CFrame.new(Vector3.new(-66, 4, -457)),
+    CFrame.new(Vector3.new(-115, 4, -457)),
+    CFrame.new(Vector3.new(-171, 4, -457)),
+    CFrame.new(Vector3.new(-242, 4, -457)),
+    CFrame.new(Vector3.new(-295, 4, -459)),
+    CFrame.new(Vector3.new(-295, 4, -377)),
+    CFrame.new(Vector3.new(-296, 4, -290)),
+    CFrame.new(Vector3.new(-295, 4, -169)),
+    CFrame.new(Vector3.new(-295, 4, -104)),
+    CFrame.new(Vector3.new(-295, 4, -19)),
+    CFrame.new(Vector3.new(-295, 4, 40)),
+    CFrame.new(Vector3.new(-295, 4, 97)),
+    CFrame.new(Vector3.new(-295, 4, 206)),
+    CFrame.new(Vector3.new(-295, 4, 282)),
+    CFrame.new(Vector3.new(-298, 51, 301)),
+    CFrame.new(Vector3.new(-241, 51, 302)),
+    CFrame.new(Vector3.new(-147, 51, 302)),
+    CFrame.new(Vector3.new(-67, 51, 303)),
+    CFrame.new(Vector3.new(-8, 51, 302)),
+    CFrame.new(Vector3.new(66, 51, 302)),
+    CFrame.new(Vector3.new(124, 51, 302)),
+    CFrame.new(Vector3.new(174, 51, 303)),
+    CFrame.new(Vector3.new(176, 51, 224)),
+    CFrame.new(Vector3.new(176, 51, 146)),
+    CFrame.new(Vector3.new(176, 51, 60)),
+    CFrame.new(Vector3.new(176, 50, -38)),
+    CFrame.new(Vector3.new(175, 50, -107)),
+    CFrame.new(Vector3.new(176, 50, -201)),
+    CFrame.new(Vector3.new(175, 50, -316)),
+    CFrame.new(Vector3.new(176, 50, -423)),
+    CFrame.new(Vector3.new(176, 50, -514)),
+    CFrame.new(Vector3.new(176, 50, -626)),
+    CFrame.new(Vector3.new(176, 50, -687)),
+    CFrame.new(Vector3.new(-2, 50, -688)),
+    CFrame.new(Vector3.new(-179, 50, -688)),
+    CFrame.new(Vector3.new(-239, 50, -688)),
+    CFrame.new(Vector3.new(-323, 50, -688)),
+    CFrame.new(Vector3.new(-441, 50, -688)),
+    CFrame.new(Vector3.new(-442, 50, -632)),
+    CFrame.new(Vector3.new(-443, 50, -521)),
+    CFrame.new(Vector3.new(-443, 50, -409)),
+    CFrame.new(Vector3.new(-443, 50, -289)),
+    CFrame.new(Vector3.new(-443, 50, -238)),
+    CFrame.new(Vector3.new(-443, 97, -220)),
+    -- Add more positions as needed
+}
+
+for _, position in ipairs(teleportPositions) do
+    character:SetPrimaryPartCFrame(position)
+    wait(1) -- Adjust the wait time as needed
+end
+  	end    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+OrionLib:Init()
